@@ -1,0 +1,8 @@
+<ListView [items]="flowers">
+    <template let-flower="item" let-odd="odd" let-even="even">
+      <StackLayout backgroundColor="gray" borderWidth="1" borderColor="black">
+        <Label [text]="flower.tags" class="list-group-item"></Label>
+        <Image [src]="flower.previewURL"></Image>
+      </StackLayout>
+    </template>
+</ListView>
